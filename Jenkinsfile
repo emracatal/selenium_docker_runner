@@ -19,8 +19,8 @@ pipeline{
             bat "docker-compose -f test-suite.yaml down"
 
             //archive files
-            archiveArtifacts artifact: 'output/flight-reservation/emailable-report.html', followSymlinks: false
-            archiveArtifacts artifact: 'output/vendor-portal/emailable-report.html', followSymlinks: false
+            archiveArtifacts artifacts: 'output/flight-reservation/emailable-report.html', followSymlinks: false
+            archiveArtifacts artifacts: 'output/vendor-portal/emailable-report.html', followSymlinks: false
         }
     }
 
